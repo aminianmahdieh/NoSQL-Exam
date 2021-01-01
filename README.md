@@ -2,8 +2,11 @@
 Kafka Api
 
 #MAIN CONCEPTS
+
 ▸ Choose a continuous data source (available in API)
+
 ▸ Collect the data in a Kafka topic
+
 ▸ Query the API at a given interval
 ▸ Produce a Kafka message for each data capture
 ▸ Continuous data processing with Kafka Stream & KSQL
