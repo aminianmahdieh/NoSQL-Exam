@@ -3,7 +3,9 @@ Kafka Api
 
 #MAIN CONCEPTS
 
-▸ Choose a continuous data source (available in API)
+▸ Choose a continuous data source (available in API): We choose a weather API https://openweathermap.org/forecast5 
+
+1. first I try to request this api from python
 
 ▸ Collect the data in a Kafka topic
 
