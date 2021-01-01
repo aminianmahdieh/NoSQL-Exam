@@ -23,3 +23,17 @@ Kafka Api
 
 ▸ Students are in charge of finding the use case regarding its data source
 
+PROCESS SAMPLE
+
+▸ Know the number of bicycles available on average (per hour,
+per day, etc.) for each station
+
+▸ Know the most available stations during peak periods
+
+▸ Classify the most used stations per day
+
+▸ Associate the closest RATP station to the Velib station
+
+▸ Alert as soon as possible when there are not enough vehicles
+
+▸ etc.
