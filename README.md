@@ -6,8 +6,9 @@ I wrote 3 python files that sould be run in the following format:\
 2. producerApi.py: send the data to consumer
 3. consumerApi.py: send silly messages based on the weather forcast of each day.
 
+In order to be avle to run these files you should have the following requirments. 
 
-## Prequesitions
+## Requirments
 * Ubuntu interface
 * Java with version higher than 8
 * python
