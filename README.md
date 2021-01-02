@@ -5,7 +5,7 @@ Kafka Api
 
 ▸ Choose a continuous data source (available in API):
 
- I choose the weather api from https://openweathermap.org/forecast5
+ I choose the weather api from https://www.metaweather.com/api/?ref=apilist.fun
 
 ▸ Collect the data in a Kafka topic
 
