@@ -118,10 +118,44 @@ Now you have a python interpreter to work with.
 
 In order to run kafka server we have 2 options:
 1. Start kafka server and zookeeper manually from scratch 
+
 or
+
 2. clone a repository that already have all this planned in itself.
 
 
+### First option:
+First, Go to the [Apache kafka quickstart page](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.7.0/kafka_2.13-2.7.0.tgz) and download and move the downloaded zip folder to the opt directory where you download all your softwares or you can do as follow:
+```
+cd /opt
+wget https://downloads.apache.org/kafka/2.7.0/kafka_2.13-2.7.0.tgz 
+```
+Nowl unzip the file by:
+```
+tar -xvzf kafka_2.13-2.7.0.tgz
+
+cd kafka_2.13-2.7.0
+```
+Now we must change the configuration setting of the kafka server and zookeeper. Thus:
+```
+cd config
+
+sudo nano server.properties
+```
+find the following commands and change them as follow:
+```
+advertised.listeners = PLAINTEXT://localhost:9092
+
+zookeeper.connect = localhost:2181
+```
+save it and exit. Now to run zookeeper first:
+```
+sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+And then open a new terminal go to the same folder and start kafka server:
+```
+sudo bin/kafka-server-start.sh config/server.properties
+```
 
 
 
