@@ -2,7 +2,6 @@
 
 
 ## MAIN CONCEPTS
-
 * Choose a continuous data source (available in API)
 * Collect the data in a Kafka topic
 * Query the API at a given interval
@@ -156,6 +155,77 @@ And then open a new terminal go to the same folder and start kafka server:
 ```
 sudo bin/kafka-server-start.sh config/server.properties
 ```
+
+### Second Option:
+In this Option; first we need to install docker-compose on our system. All the steps to install docker is explained by details in [docker engine page](https://docs.docker.com/engine/install/ubuntu/). ButI also brifely mention the steps here.
+
+#### Install docker-compose
+##### Set up the repository
+
+Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+```
+sudo apt-get update
+sudo apt-get install \
+     apt-transport-https \
+     ca-certificates \
+     curl \
+     gnupg-agent \
+     software-properties-common
+```
+Then add Docker’s official GPG key:
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+And verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint as follow:
+```
+sudo apt-key fingerprint 0EBFCD88
+```
+Now use the following command to set up the stable repository. 
+```
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+##### Install Docker Engine
+Update the apt package index, and install the latest version of Docker Engine and containerdL
+```
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+Verify that Docker Engine is installed correctly by running the hello-world image.
+```
+sudo docker run hello-world
+```
+##### Install Docker compose
+Run this command to download the current stable release of Docker Compose:
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+Then apply executable permissions to the binary:
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+Now test the installation:
+```
+docker-compose --version
+```
+
+Now we have docker-compose on our system now we can clone the repository:
+```
+cd /opt
+
+sudo git clone https://github.com/gboissinot/esilv-kafka.git
+
+cd esilv-kafka/collection-tier.src.main
+
+sudo docker-compose up
+```
+Then when it's run completely you should open [http://127.0.0.1:3030]. Which is the interface of your kafka.
+
+
+
+
 
 
 
