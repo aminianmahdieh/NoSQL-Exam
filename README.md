@@ -1,17 +1,11 @@
-# NoSQL-Exam
+# NoSQL-Exam: Kafka Api programming
+**USE CASE:** * Get the geolocation of a city (by default it is London) from an Api and from another Api get the weathe forcast of 5 days in advance of that city; send this forcast data through producer to the consumer and consumer producer some silly messages based on each day weather.* 
 
+I wrote 3 python files that sould be run in the following format:\
+1. parsApi.py: get the geolocation and weather forcast of 5 days in advance.
+2. producerApi.py: send the data to consumer
+3. consumerApi.py: send silly messages based on the weather forcast of each day.
 
-## MAIN CONCEPTS
-* Choose a continuous data source (available in API)
-* Collect the data in a Kafka topic
-* Query the API at a given interval
-* Produce a Kafka message for each data capture
-* Continuous data processing with Kafka Stream & KSQL
-* Aggregated data production
-* Writing in new topics
-* Ingest denormalized data into MongoDB
-* Connectivity with a geoloc system.
-* Students are in charge of finding the use case regarding its data source
 
 ## Prequesitions
 * Ubuntu interface
