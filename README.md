@@ -28,9 +28,9 @@ Since my own pc system is windows10 pro; I needed the ubuntu system to be able t
 
 1. Enable Hyper_V:
   To enable hyper_v; open powershell with admin rights and write:
-  '''
+  ```
   Enable-WindowsOptionalFeature -Online -Feature Microsoft-Hyper-V -All
-  '''
+  ```
   Then it prompts you to a restart which you should confirm.
   
 2. Run Hyper_V manager:
@@ -47,20 +47,19 @@ Since my own pc system is windows10 pro; I needed the ubuntu system to be able t
   
 5. Make Ubuntu full screen:
   Inside your Ubuntu system, open the terminal, and type:
-  '''
+  ```
   sudo nano /etc/default/grub
-  '''
+  ```
   And change the following lines:
-  '''
+  ```
   GRUB_CMDLINE_LINUX_DEFAULT=video=hyperv_fb:1920x1080
   GRUB_CMDLINE_LINUX=video=hyperv_fb:1920x1080
-  '''
+  ```
   save it and exit; then:
-  '''
+  ```
   sudo update-grub
   sudo reboot
-  '''
-  
+  ```  
   Now you have a full screean ubuntu in a VM in Hyper-V.
   
   
