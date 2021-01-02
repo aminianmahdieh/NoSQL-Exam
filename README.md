@@ -1,26 +1,24 @@
-## NoSQL-Exam
-Kafka Api
+# NoSQL-Exam
 
-#MAIN CONCEPTS
 
-▸ Choose a continuous data source (available in API):
+## MAIN CONCEPTS
 
- I choose the weather api from https://www.metaweather.com/api/?ref=apilist.fun
+*Choose a continuous data source (available in API)
 
-▸ Collect the data in a Kafka topic
+*Collect the data in a Kafka topic
 
-▸ Query the API at a given interval
+*Query the API at a given interval
 
-▸ Produce a Kafka message for each data capture
+*Produce a Kafka message for each data capture
 
-▸ Continuous data processing with Kafka Stream & KSQL
+*Continuous data processing with Kafka Stream & KSQL
 
-▸ Aggregated data production
+*Aggregated data production
 
-▸ Writing in new topics
+*Writing in new topics
 
-▸ Ingest denormalized data into MongoDB
+*Ingest denormalized data into MongoDB
 
-▸ Connectivity with a geoloc system.
+*Connectivity with a geoloc system.
 
-▸ Students are in charge of finding the use case regarding its data source
+*Students are in charge of finding the use case regarding its data source
