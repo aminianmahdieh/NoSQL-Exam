@@ -1,12 +1,12 @@
 # NoSQL-Exam: Kafka Api programming
-**USE CASE:** * Get the geolocation of a city (by default it is London) from an Api and from another Api get the weathe forcast of 5 days in advance of that city; send this forcast data through producer to the consumer and consumer producer some silly messages based on each day weather.* 
+**USE CASE:** * Get the geolocation of a city (by default it is London) from an Api and with this location from another Api get the weathe forcast of 5 days in advance of that city; send this forcast data through producer to the consumer and consumer producer some silly messages based on each day weather.* 
 
 I wrote 3 python files that sould be run in the following format:\
 1. parsApi.py: get the geolocation and weather forcast of 5 days in advance.
 2. producerApi.py: send the data to consumer
 3. consumerApi.py: send silly messages based on the weather forcast of each day.
 
-In order to be avle to run these files you should have the following requirments. 
+In order to be able to run these files you should have the following requirments. 
 
 ## Requirments
 * Ubuntu interface
